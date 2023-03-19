@@ -116,6 +116,8 @@ background-color: yellow;
 }
 #pannel .col #big:hover{
     background-color: yellowgreen;
+    outline: 3px dotted black;
+    
     }
     #pannel .col #equal:hover{
         background-color: blue;
