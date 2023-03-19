@@ -5,7 +5,9 @@ function num(k){
 function equ(){
     let c=document.getElementById("res-disp").innerText;
     let d=document.getElementById("res-disp");
-    
+    let str=c;
+    console.log(str.replace(/x/g,"*"));
+    c=str.replace(/x/g,"*");
     d.innerText=eval(c);
 }
 function cle(){
@@ -21,11 +23,11 @@ function bs(){
         newstr.push(str[i]);
     }
     e.innerText=newstr.join("");
-    console.log(str[0]);
+    
 }
-function show(){
-    let e=document.getElementById("buttons");
-    e.style.display="block";
-    let h=document.getElementById("lock");
-    h.style.display="none"
-}
+// function show(){
+//     let e=document.getElementById("buttons");
+//     e.style.display="block";
+//     let h=document.getElementById("lock");
+//     h.style.display="none"
+// }
