@@ -4,6 +4,7 @@
 }
 body{
     background-color: tomato;
+    color: white;
 }
 .container{
     background-color: white;
@@ -29,12 +30,21 @@ body{
    
 }
 #res-disp{
+    background-color: transparent;
+    border-style: none;
+    color: white;
     width: 350px;
     height: 130px;
     justify-content: end;
     padding: 15px;
     font-size: 50px;
+    overflow: hidden;
+    /* white-space: no-wrap; */
 }
+#res-disp:focus{
+    outline-style:none ;
+}
+
 #tool-disp2{
     /* background-color: blueviolet; */
     width: 380px;
@@ -107,6 +117,7 @@ body{
 }
 #lcol #equal{
     background-color: whitesmoke;
+    color: black;
 }
 #pannel .sym{
     background-color: red;
