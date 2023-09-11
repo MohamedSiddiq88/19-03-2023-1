@@ -1,5 +1,9 @@
 function num(k){
     let num=document.getElementById("res-disp");
+
+    if(num.innerText=="result here"){
+        num.innerText="";
+    }
     num.append(k);
 }
 function equ(){
@@ -25,9 +29,20 @@ function bs(){
     e.innerText=newstr.join("");
     
 }
-// function show(){
-//     let e=document.getElementById("buttons");
-//     e.style.display="block";
-//     let h=document.getElementById("lock");
-//     h.style.display="none"
-// }
+
+
+
+function calculate(e){
+    console.log("in",e)
+    if(e.key>=0||e.key=="+"||e.key=="-"||e.key=="*"||e.key=="/"){
+    num(e.key)
+    }else if(e.key=="=" || e.key=="Enter"){
+        equ()
+    }else if(e.key=="c" || e.key=="C"){
+        cle()
+    }else if(e.key=="Backspace"){
+        bs()
+    }
+}
+
+window.addEventListener("keydown",(e)=>calculate(e))
